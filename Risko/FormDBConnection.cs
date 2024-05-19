@@ -24,35 +24,6 @@ namespace Risko
         public static string strSysDatabase_global;
 
 
-        public static bool bBasel4_global = false;
-        public static string  strTblProcesses_global = "dbo.RMC_PROCESSES";
-        public static string  strTblProcParams_global = "dbo.RMC_PROCESS_PARAMS";
-        public static string  strTblScenario_global = "dbo.RML_SCENARIO";
-        public static string  strTblCurrency_global = "dbo.RML_CURRENCY";
-        public static string  strTblRegulation_global = "dbo.RML_REGULATION";
-        public static string  strTblProcSteps_global = "dbo.RMC_PROCESS_STEPS";
-        public static string  strTblProcStepDetails_global = "dbo.RMC_PROCESS_STEP_DETAILS";
-        public static string  strTblProcGroups_global = "dbo.RMC_PROCESS_GROUPS";
-        public static string strTblReportingProfile_global = "dbo.RMC_REPORTINGPROFILE";
-        public static string strTblCountry_global = "dbo.RML_COUNTRY";
-        public static string strTblGroupEntity_global = "dbo.RMC_GROUPENTITY";
-        public static string strTblGroupEntityType_global = "dbo.RML_GROUPENTITYTYPE";
-        public static string strTblReportingProfileEntities_global = "RMC_REPORTINGPROFILE_ENTITIES";
-        public static string strTblProcessLog_global = "dbo.RMP_PROCESSLOG";
-        public static string strTblLoggedMessages_global = "dbo.RMP_LOGGEDMESSAGES";
-        public static string strTblRegulatoryCounterpartyGroup_global = "dbo.RML_REGULATORYCOUNTERPARTYGROUP";
-        public static string strTblCounterpartyType_global = "dbo.RML_COUNTERPARTYTYPE";
-
-        public static string strTblLiqCounterparty_global = "dbo.RMF_LIQUIDITY_COUNTERPARTIES";
-        public static string strTblLiqAdditionals_global = "dbo.RMF_LIQUIDITY_ADDITIONALS";
-        public static string strTblLiqAssets_global = "dbo.RMF_LIQUIDITY_ASSETS";
-        public static string strTblLiqDepositsLoans_global = "dbo.RMF_LIQUIDITY_DEPOSITS_LOANS";
-        public static string strTblLiqSLSB_global = "dbo.RMF_LIQUIDITY_SLSB";
-        public static string strTblLiqLoanCollaterals_global = "dbo.RMF_LIQUIDITY_LOAN_COLLATERALS";
-        public static string strTblExchangeRates_global = "dbo.RMF_EXCHANGERATES";
-        public static string strTblApproaches_global = "dbo.RML_APPROACH";
-
-
         public FormDBConnection()
         {
             InitializeComponent();
@@ -147,8 +118,6 @@ namespace Risko
                     strServerName_global = this.textBoxServerName.Text;
                     strDatabase_global = ((ComboListItem)comboBoxDatabases.SelectedItem).Name;
                     strSysDatabase_global = ((ComboListItem)comboBoxDatabases_Sys.SelectedItem).Name;
-
-
                     
                     // open main dialog list
                     FormMainDialog dlgMain = new FormMainDialog();
@@ -628,7 +597,7 @@ namespace Risko
         private void radioButton_RiskAvert_Prod_CheckedChanged(object sender, EventArgs e)
         {
             string strSelectedTab = this.tabControlDbConnections.SelectedTab.Tag.ToString();
-            string strIP = @"SQLDEV-SRV,60002";
+            string strIP = @".";
 
             if (this.radioButton_RiskAvert_Prod.Checked)
             {
@@ -649,56 +618,7 @@ namespace Risko
                 }
             }
         }
-
-        private void radioButton_OFFICE_SRV_CheckedChanged(object sender, EventArgs e)
-        {
-            string strSelectedTab = this.tabControlDbConnections.SelectedTab.Tag.ToString();
-            string strIP = @"localhost,1433";
-
-            if (this.radioButton_OFFICE_SRV.Checked)
-            {
-                this.radioButtonSQLServerAuthentication.Checked = true;
-                this.textBoxUserName.Text = "sa";
-                this.textBoxPassword.Text = "Abc12345!";
-
-                if (strSelectedTab == "1")
-                {
-                    this.textBoxServerName.Text = strIP;
-                    DefaultConnection();
-                }
-
-                if (strSelectedTab == "2")
-                {
-                    this.textBoxSaasServerName.Text = strIP;
-                    FillSssaDatabases();
-                }
-            }
-        }
-
-        private void radioButton_VESSEL_SRV_CheckedChanged(object sender, EventArgs e)
-        {
-            string strSelectedTab = this.tabControlDbConnections.SelectedTab.Tag.ToString();
-            string strIP = @"localhost,1434";
-
-            if (this.radioButton_VESSEL_SRV.Checked)
-            {
-                this.radioButtonSQLServerAuthentication.Checked = true;
-                this.textBoxUserName.Text = "sa";
-                this.textBoxPassword.Text = "Abc12345!";
-
-                if (strSelectedTab == "1")
-                {
-                    this.textBoxServerName.Text = strIP;
-                    DefaultConnection();
-                }
-
-                if (strSelectedTab == "2")
-                {
-                    this.textBoxSaasServerName.Text = strIP;
-                    FillSssaDatabases();
-                }
-            }
-        }
+        
     }
 }
 

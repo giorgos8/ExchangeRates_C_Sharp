@@ -24,9 +24,6 @@ namespace Risko
         string strDatabase = null;
         string strDatabase_Sys = null;
 
-        
-
-
         public FormMainDialog()
         {
             cnn = FormDBConnection.cnn_global;
@@ -81,10 +78,10 @@ namespace Risko
 	                                cast(trc_step_id as varchar(10)) as trc_step_id,
 	                                trc_step_desc,
 	                                trc_info,
-	                                ISNULL(CONVERT(VARCHAR(30), trc_input_date, 103) + ' ' + CONVERT(VARCHAR(30), trc_input_date, 108), '') as trc_input_date,
+	                                isnull(convert(varchar(30), trc_input_date, 103) + ' ' + convert(varchar(30), trc_input_date, 108), '') as trc_input_date,
 	                                trc_user
                                 from
-	                                [dbo].[tbl_traces]
+	                                [dbo].[traces]
                                 order by
 	                                cast(trc_run_id as int) desc,
 	                                trc_step_id asc
@@ -107,7 +104,8 @@ namespace Risko
 	                                DATE,
                                     FROM_CURRENCY,
                                     TO_CURRENCY,
-                                    EXCHANGE_RATE
+                                    EXCHANGE_RATE,
+                                    INPUT_DATE
                                 FROM
 	                                [dbo].[VW_EXCHANGE_RATES_USD_MISSING_DATES]
                                 ORDER BY
@@ -534,9 +532,10 @@ namespace Risko
                     {
                         listViewMain.ForeColor = System.Drawing.Color.Black;
                         listViewMain.Columns.Add("DATE", 80, HorizontalAlignment.Left);
-                        listViewMain.Columns.Add("FROM_CUR", 60, HorizontalAlignment.Center);
-                        listViewMain.Columns.Add("TO_CUR", 60, HorizontalAlignment.Center);
+                        listViewMain.Columns.Add("FROM_CUR", 80, HorizontalAlignment.Center);
+                        listViewMain.Columns.Add("TO_CUR", 80, HorizontalAlignment.Center);
                         listViewMain.Columns.Add("EXCHANGE_RATE", 120, HorizontalAlignment.Right);
+                        listViewMain.Columns.Add("INPUT_DATE", 150, HorizontalAlignment.Center);
 
 
                         command = new SqlCommand(sql, cnn);
@@ -548,13 +547,14 @@ namespace Risko
                             string str_from_currency = dr.GetString(1);
                             string str_to_currency = dr.GetString(2);
                             string str_exchange_rate = dr.GetString(3);
-
+                            string str_input_date = dr.GetString(4);
 
                             ListViewItem item = this.listViewMain.Items.Add(str_date, str_date);
                             item.ForeColor = Color.Blue;
                             item.SubItems.Add(str_from_currency);
                             item.SubItems.Add(str_to_currency);
                             item.SubItems.Add(str_exchange_rate);
+                            item.SubItems.Add(str_input_date);
 
                             if (str_exchange_rate == "-")
                                 item.ForeColor = Color.Red;

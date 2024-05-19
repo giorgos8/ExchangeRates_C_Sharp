@@ -67,8 +67,6 @@
             this.buttonSaasDbRefresh = new System.Windows.Forms.Button();
             this.radioButton_RiskAvert_Prod = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton_VESSEL_SRV = new System.Windows.Forms.RadioButton();
-            this.radioButton_OFFICE_SRV = new System.Windows.Forms.RadioButton();
             this.textBox_PORT = new System.Windows.Forms.TextBox();
             this.textBox_VERSION = new System.Windows.Forms.TextBox();
             this.textBox_Last_Restart = new System.Windows.Forms.TextBox();
@@ -86,19 +84,19 @@
             // labelServerName
             // 
             this.labelServerName.AutoSize = true;
-            this.labelServerName.Location = new System.Drawing.Point(11, 47);
+            this.labelServerName.Location = new System.Drawing.Point(12, 59);
             this.labelServerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelServerName.Name = "labelServerName";
-            this.labelServerName.Size = new System.Drawing.Size(87, 16);
+            this.labelServerName.Size = new System.Drawing.Size(103, 20);
             this.labelServerName.TabIndex = 0;
             this.labelServerName.Text = "Server name:";
             // 
             // textBoxServerName
             // 
-            this.textBoxServerName.Location = new System.Drawing.Point(119, 44);
-            this.textBoxServerName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxServerName.Location = new System.Drawing.Point(134, 55);
+            this.textBoxServerName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxServerName.Name = "textBoxServerName";
-            this.textBoxServerName.Size = new System.Drawing.Size(375, 22);
+            this.textBoxServerName.Size = new System.Drawing.Size(421, 26);
             this.textBoxServerName.TabIndex = 1;
             this.textBoxServerName.TextChanged += new System.EventHandler(this.textBoxServerName_TextChanged);
             // 
@@ -106,10 +104,10 @@
             // 
             this.buttonConnect.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonConnect.Location = new System.Drawing.Point(137, 266);
-            this.buttonConnect.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonConnect.Location = new System.Drawing.Point(154, 332);
+            this.buttonConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(129, 28);
+            this.buttonConnect.Size = new System.Drawing.Size(145, 35);
             this.buttonConnect.TabIndex = 2;
             this.buttonConnect.Text = "Connect";
             this.buttonConnect.UseVisualStyleBackColor = true;
@@ -118,10 +116,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 81);
+            this.label1.Location = new System.Drawing.Point(12, 101);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Database:";
             // 
@@ -129,18 +127,18 @@
             // 
             this.comboBoxDatabases.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDatabases.FormattingEnabled = true;
-            this.comboBoxDatabases.Location = new System.Drawing.Point(119, 79);
+            this.comboBoxDatabases.Location = new System.Drawing.Point(134, 99);
             this.comboBoxDatabases.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxDatabases.Name = "comboBoxDatabases";
-            this.comboBoxDatabases.Size = new System.Drawing.Size(240, 24);
+            this.comboBoxDatabases.Size = new System.Drawing.Size(270, 28);
             this.comboBoxDatabases.TabIndex = 9;
             // 
             // buttonDBRefresh
             // 
-            this.buttonDBRefresh.Location = new System.Drawing.Point(377, 76);
-            this.buttonDBRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDBRefresh.Location = new System.Drawing.Point(424, 95);
+            this.buttonDBRefresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonDBRefresh.Name = "buttonDBRefresh";
-            this.buttonDBRefresh.Size = new System.Drawing.Size(117, 28);
+            this.buttonDBRefresh.Size = new System.Drawing.Size(132, 35);
             this.buttonDBRefresh.TabIndex = 10;
             this.buttonDBRefresh.Text = "DBs Refresh";
             this.buttonDBRefresh.UseVisualStyleBackColor = true;
@@ -150,10 +148,10 @@
             // 
             this.buttonTestConnection.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonTestConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonTestConnection.Location = new System.Drawing.Point(273, 266);
-            this.buttonTestConnection.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTestConnection.Location = new System.Drawing.Point(307, 332);
+            this.buttonTestConnection.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonTestConnection.Name = "buttonTestConnection";
-            this.buttonTestConnection.Size = new System.Drawing.Size(129, 28);
+            this.buttonTestConnection.Size = new System.Drawing.Size(145, 35);
             this.buttonTestConnection.TabIndex = 11;
             this.buttonTestConnection.Text = "Test Connection";
             this.buttonTestConnection.UseVisualStyleBackColor = true;
@@ -161,20 +159,20 @@
             // 
             // textBoxConnectionString
             // 
-            this.textBoxConnectionString.Location = new System.Drawing.Point(20, 26);
+            this.textBoxConnectionString.Location = new System.Drawing.Point(22, 32);
             this.textBoxConnectionString.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxConnectionString.Multiline = true;
             this.textBoxConnectionString.Name = "textBoxConnectionString";
-            this.textBoxConnectionString.Size = new System.Drawing.Size(325, 63);
+            this.textBoxConnectionString.Size = new System.Drawing.Size(365, 78);
             this.textBoxConnectionString.TabIndex = 12;
             // 
             // buttonTestConnectionFromConString
             // 
             this.buttonTestConnectionFromConString.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonTestConnectionFromConString.Location = new System.Drawing.Point(364, 60);
-            this.buttonTestConnectionFromConString.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTestConnectionFromConString.Location = new System.Drawing.Point(410, 75);
+            this.buttonTestConnectionFromConString.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonTestConnectionFromConString.Name = "buttonTestConnectionFromConString";
-            this.buttonTestConnectionFromConString.Size = new System.Drawing.Size(113, 27);
+            this.buttonTestConnectionFromConString.Size = new System.Drawing.Size(127, 34);
             this.buttonTestConnectionFromConString.TabIndex = 14;
             this.buttonTestConnectionFromConString.Text = "Test Connection";
             this.buttonTestConnectionFromConString.UseVisualStyleBackColor = true;
@@ -184,10 +182,10 @@
             // 
             this.radioButtonWindowsAuthentication.AutoSize = true;
             this.radioButtonWindowsAuthentication.Checked = true;
-            this.radioButtonWindowsAuthentication.Location = new System.Drawing.Point(20, 22);
+            this.radioButtonWindowsAuthentication.Location = new System.Drawing.Point(22, 28);
             this.radioButtonWindowsAuthentication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonWindowsAuthentication.Name = "radioButtonWindowsAuthentication";
-            this.radioButtonWindowsAuthentication.Size = new System.Drawing.Size(169, 20);
+            this.radioButtonWindowsAuthentication.Size = new System.Drawing.Size(205, 24);
             this.radioButtonWindowsAuthentication.TabIndex = 15;
             this.radioButtonWindowsAuthentication.TabStop = true;
             this.radioButtonWindowsAuthentication.Text = "Windows Authentication";
@@ -197,10 +195,10 @@
             // radioButtonSQLServerAuthentication
             // 
             this.radioButtonSQLServerAuthentication.AutoSize = true;
-            this.radioButtonSQLServerAuthentication.Location = new System.Drawing.Point(20, 52);
+            this.radioButtonSQLServerAuthentication.Location = new System.Drawing.Point(22, 65);
             this.radioButtonSQLServerAuthentication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonSQLServerAuthentication.Name = "radioButtonSQLServerAuthentication";
-            this.radioButtonSQLServerAuthentication.Size = new System.Drawing.Size(183, 20);
+            this.radioButtonSQLServerAuthentication.Size = new System.Drawing.Size(223, 24);
             this.radioButtonSQLServerAuthentication.TabIndex = 16;
             this.radioButtonSQLServerAuthentication.Text = "SQL Server Authentication";
             this.radioButtonSQLServerAuthentication.UseVisualStyleBackColor = true;
@@ -209,10 +207,10 @@
             // textBoxUserName
             // 
             this.textBoxUserName.Enabled = false;
-            this.textBoxUserName.Location = new System.Drawing.Point(231, 52);
+            this.textBoxUserName.Location = new System.Drawing.Point(260, 65);
             this.textBoxUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(115, 22);
+            this.textBoxUserName.Size = new System.Drawing.Size(129, 26);
             this.textBoxUserName.TabIndex = 17;
             // 
             // textBoxPassword
@@ -220,28 +218,28 @@
             this.textBoxPassword.AccessibleDescription = "";
             this.textBoxPassword.AccessibleName = "";
             this.textBoxPassword.Enabled = false;
-            this.textBoxPassword.Location = new System.Drawing.Point(364, 52);
+            this.textBoxPassword.Location = new System.Drawing.Point(410, 65);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(115, 22);
+            this.textBoxPassword.Size = new System.Drawing.Size(129, 26);
             this.textBoxPassword.TabIndex = 18;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Location = new System.Drawing.Point(231, 32);
+            this.labelUserName.Location = new System.Drawing.Point(260, 40);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(76, 16);
+            this.labelUserName.Size = new System.Drawing.Size(89, 20);
             this.labelUserName.TabIndex = 19;
             this.labelUserName.Text = "User Name";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(364, 32);
+            this.labelPassword.Location = new System.Drawing.Point(410, 40);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(67, 16);
+            this.labelPassword.Size = new System.Drawing.Size(78, 20);
             this.labelPassword.TabIndex = 20;
             this.labelPassword.Text = "Password";
             // 
@@ -251,11 +249,11 @@
             this.groupBoxConnectionString.Controls.Add(this.buttonConnectionFromConString);
             this.groupBoxConnectionString.Controls.Add(this.buttonTestConnectionFromConString);
             this.groupBoxConnectionString.Controls.Add(this.textBoxConnectionString);
-            this.groupBoxConnectionString.Location = new System.Drawing.Point(13, 338);
+            this.groupBoxConnectionString.Location = new System.Drawing.Point(15, 422);
             this.groupBoxConnectionString.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxConnectionString.Name = "groupBoxConnectionString";
             this.groupBoxConnectionString.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxConnectionString.Size = new System.Drawing.Size(496, 108);
+            this.groupBoxConnectionString.Size = new System.Drawing.Size(558, 135);
             this.groupBoxConnectionString.TabIndex = 21;
             this.groupBoxConnectionString.TabStop = false;
             this.groupBoxConnectionString.Text = "Connection String";
@@ -263,10 +261,10 @@
             // buttonConnectionFromConString
             // 
             this.buttonConnectionFromConString.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonConnectionFromConString.Location = new System.Drawing.Point(364, 28);
-            this.buttonConnectionFromConString.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonConnectionFromConString.Location = new System.Drawing.Point(410, 35);
+            this.buttonConnectionFromConString.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonConnectionFromConString.Name = "buttonConnectionFromConString";
-            this.buttonConnectionFromConString.Size = new System.Drawing.Size(113, 27);
+            this.buttonConnectionFromConString.Size = new System.Drawing.Size(127, 34);
             this.buttonConnectionFromConString.TabIndex = 24;
             this.buttonConnectionFromConString.Text = "Connect";
             this.buttonConnectionFromConString.UseVisualStyleBackColor = true;
@@ -280,11 +278,11 @@
             this.groupBoxAuthentication.Controls.Add(this.textBoxUserName);
             this.groupBoxAuthentication.Controls.Add(this.radioButtonSQLServerAuthentication);
             this.groupBoxAuthentication.Controls.Add(this.radioButtonWindowsAuthentication);
-            this.groupBoxAuthentication.Location = new System.Drawing.Point(13, 155);
+            this.groupBoxAuthentication.Location = new System.Drawing.Point(15, 194);
             this.groupBoxAuthentication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxAuthentication.Name = "groupBoxAuthentication";
             this.groupBoxAuthentication.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxAuthentication.Size = new System.Drawing.Size(496, 98);
+            this.groupBoxAuthentication.Size = new System.Drawing.Size(558, 122);
             this.groupBoxAuthentication.TabIndex = 22;
             this.groupBoxAuthentication.TabStop = false;
             this.groupBoxAuthentication.Text = "Authentication";
@@ -293,10 +291,10 @@
             // 
             this.button_NoDbConnection.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button_NoDbConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button_NoDbConnection.Location = new System.Drawing.Point(137, 298);
-            this.button_NoDbConnection.Margin = new System.Windows.Forms.Padding(4);
+            this.button_NoDbConnection.Location = new System.Drawing.Point(154, 372);
+            this.button_NoDbConnection.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_NoDbConnection.Name = "button_NoDbConnection";
-            this.button_NoDbConnection.Size = new System.Drawing.Size(267, 28);
+            this.button_NoDbConnection.Size = new System.Drawing.Size(300, 35);
             this.button_NoDbConnection.TabIndex = 28;
             this.button_NoDbConnection.Text = "No DB Connection";
             this.button_NoDbConnection.UseVisualStyleBackColor = true;
@@ -306,29 +304,29 @@
             // 
             this.comboBoxDatabases_Sys.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDatabases_Sys.FormattingEnabled = true;
-            this.comboBoxDatabases_Sys.Location = new System.Drawing.Point(119, 113);
+            this.comboBoxDatabases_Sys.Location = new System.Drawing.Point(134, 141);
             this.comboBoxDatabases_Sys.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxDatabases_Sys.Name = "comboBoxDatabases_Sys";
-            this.comboBoxDatabases_Sys.Size = new System.Drawing.Size(240, 24);
+            this.comboBoxDatabases_Sys.Size = new System.Drawing.Size(270, 28);
             this.comboBoxDatabases_Sys.TabIndex = 31;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 116);
+            this.label2.Location = new System.Drawing.Point(12, 145);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(115, 20);
             this.label2.TabIndex = 30;
             this.label2.Text = "Sec Database:";
             // 
             // checkBoxAzure
             // 
             this.checkBoxAzure.AutoSize = true;
-            this.checkBoxAzure.Location = new System.Drawing.Point(119, 12);
+            this.checkBoxAzure.Location = new System.Drawing.Point(134, 15);
             this.checkBoxAzure.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxAzure.Name = "checkBoxAzure";
-            this.checkBoxAzure.Size = new System.Drawing.Size(63, 20);
+            this.checkBoxAzure.Size = new System.Drawing.Size(77, 24);
             this.checkBoxAzure.TabIndex = 35;
             this.checkBoxAzure.Text = "Azure";
             this.checkBoxAzure.UseVisualStyleBackColor = true;
@@ -338,11 +336,11 @@
             // 
             this.tabControlDbConnections.Controls.Add(this.tabPageSqlServer);
             this.tabControlDbConnections.Controls.Add(this.tabPageAnalysisServices);
-            this.tabControlDbConnections.Location = new System.Drawing.Point(11, 10);
+            this.tabControlDbConnections.Location = new System.Drawing.Point(12, 12);
             this.tabControlDbConnections.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlDbConnections.Name = "tabControlDbConnections";
             this.tabControlDbConnections.SelectedIndex = 0;
-            this.tabControlDbConnections.Size = new System.Drawing.Size(540, 486);
+            this.tabControlDbConnections.Size = new System.Drawing.Size(608, 608);
             this.tabControlDbConnections.TabIndex = 36;
             // 
             // tabPageSqlServer
@@ -361,11 +359,11 @@
             this.tabPageSqlServer.Controls.Add(this.buttonTestConnection);
             this.tabPageSqlServer.Controls.Add(this.button_NoDbConnection);
             this.tabPageSqlServer.Controls.Add(this.groupBoxAuthentication);
-            this.tabPageSqlServer.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSqlServer.Location = new System.Drawing.Point(4, 29);
             this.tabPageSqlServer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageSqlServer.Name = "tabPageSqlServer";
             this.tabPageSqlServer.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageSqlServer.Size = new System.Drawing.Size(532, 457);
+            this.tabPageSqlServer.Size = new System.Drawing.Size(600, 575);
             this.tabPageSqlServer.TabIndex = 0;
             this.tabPageSqlServer.Tag = "1";
             this.tabPageSqlServer.Text = "Sql Server";
@@ -385,11 +383,11 @@
             this.tabPageAnalysisServices.Controls.Add(this.label4);
             this.tabPageAnalysisServices.Controls.Add(this.comboBoxSaasDB);
             this.tabPageAnalysisServices.Controls.Add(this.buttonSaasDbRefresh);
-            this.tabPageAnalysisServices.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAnalysisServices.Location = new System.Drawing.Point(4, 29);
             this.tabPageAnalysisServices.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageAnalysisServices.Name = "tabPageAnalysisServices";
             this.tabPageAnalysisServices.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageAnalysisServices.Size = new System.Drawing.Size(532, 457);
+            this.tabPageAnalysisServices.Size = new System.Drawing.Size(600, 575);
             this.tabPageAnalysisServices.TabIndex = 1;
             this.tabPageAnalysisServices.Tag = "2";
             this.tabPageAnalysisServices.Text = "Analysis Services";
@@ -397,29 +395,29 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(324, 44);
+            this.label7.Location = new System.Drawing.Point(364, 55);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 16);
+            this.label7.Size = new System.Drawing.Size(108, 20);
             this.label7.TabIndex = 54;
             this.label7.Text = "Last Modified:";
             // 
             // textBoxSaasDbLastModified
             // 
             this.textBoxSaasDbLastModified.Enabled = false;
-            this.textBoxSaasDbLastModified.Location = new System.Drawing.Point(323, 63);
-            this.textBoxSaasDbLastModified.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSaasDbLastModified.Location = new System.Drawing.Point(363, 79);
+            this.textBoxSaasDbLastModified.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxSaasDbLastModified.Name = "textBoxSaasDbLastModified";
-            this.textBoxSaasDbLastModified.Size = new System.Drawing.Size(176, 22);
+            this.textBoxSaasDbLastModified.Size = new System.Drawing.Size(198, 26);
             this.textBoxSaasDbLastModified.TabIndex = 53;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 220);
+            this.label6.Location = new System.Drawing.Point(18, 275);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 16);
+            this.label6.Size = new System.Drawing.Size(157, 20);
             this.label6.TabIndex = 52;
             this.label6.Text = "Dimensions && Cubes";
             // 
@@ -427,41 +425,41 @@
             // 
             this.listViewCubes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.listViewCubes.HideSelection = false;
-            this.listViewCubes.Location = new System.Drawing.Point(20, 241);
-            this.listViewCubes.Margin = new System.Windows.Forms.Padding(4);
+            this.listViewCubes.Location = new System.Drawing.Point(22, 301);
+            this.listViewCubes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewCubes.MultiSelect = false;
             this.listViewCubes.Name = "listViewCubes";
-            this.listViewCubes.Size = new System.Drawing.Size(480, 202);
+            this.listViewCubes.Size = new System.Drawing.Size(540, 252);
             this.listViewCubes.TabIndex = 48;
             this.listViewCubes.UseCompatibleStateImageBehavior = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 134);
+            this.label5.Location = new System.Drawing.Point(18, 168);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 16);
+            this.label5.Size = new System.Drawing.Size(140, 20);
             this.label5.TabIndex = 18;
             this.label5.Text = "Connection String:";
             // 
             // textBoxSaasConnectionString
             // 
-            this.textBoxSaasConnectionString.Location = new System.Drawing.Point(20, 156);
+            this.textBoxSaasConnectionString.Location = new System.Drawing.Point(22, 195);
             this.textBoxSaasConnectionString.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSaasConnectionString.Multiline = true;
             this.textBoxSaasConnectionString.Name = "textBoxSaasConnectionString";
-            this.textBoxSaasConnectionString.Size = new System.Drawing.Size(480, 56);
+            this.textBoxSaasConnectionString.Size = new System.Drawing.Size(540, 69);
             this.textBoxSaasConnectionString.TabIndex = 17;
             // 
             // buttonSaasConnect
             // 
             this.buttonSaasConnect.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonSaasConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.buttonSaasConnect.Location = new System.Drawing.Point(20, 102);
-            this.buttonSaasConnect.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSaasConnect.Location = new System.Drawing.Point(22, 128);
+            this.buttonSaasConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSaasConnect.Name = "buttonSaasConnect";
-            this.buttonSaasConnect.Size = new System.Drawing.Size(479, 27);
+            this.buttonSaasConnect.Size = new System.Drawing.Size(539, 34);
             this.buttonSaasConnect.TabIndex = 16;
             this.buttonSaasConnect.Text = "Connect";
             this.buttonSaasConnect.UseVisualStyleBackColor = true;
@@ -470,28 +468,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 16);
+            this.label3.Location = new System.Drawing.Point(18, 20);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 16);
+            this.label3.Size = new System.Drawing.Size(103, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Server name:";
             // 
             // textBoxSaasServerName
             // 
-            this.textBoxSaasServerName.Location = new System.Drawing.Point(124, 11);
-            this.textBoxSaasServerName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSaasServerName.Location = new System.Drawing.Point(140, 14);
+            this.textBoxSaasServerName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxSaasServerName.Name = "textBoxSaasServerName";
-            this.textBoxSaasServerName.Size = new System.Drawing.Size(192, 22);
+            this.textBoxSaasServerName.Size = new System.Drawing.Size(216, 26);
             this.textBoxSaasServerName.TabIndex = 12;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 44);
+            this.label4.Location = new System.Drawing.Point(135, 55);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 16);
+            this.label4.Size = new System.Drawing.Size(83, 20);
             this.label4.TabIndex = 13;
             this.label4.Text = "Database:";
             // 
@@ -499,19 +497,19 @@
             // 
             this.comboBoxSaasDB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSaasDB.FormattingEnabled = true;
-            this.comboBoxSaasDB.Location = new System.Drawing.Point(124, 63);
+            this.comboBoxSaasDB.Location = new System.Drawing.Point(140, 79);
             this.comboBoxSaasDB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxSaasDB.Name = "comboBoxSaasDB";
-            this.comboBoxSaasDB.Size = new System.Drawing.Size(192, 24);
+            this.comboBoxSaasDB.Size = new System.Drawing.Size(216, 28);
             this.comboBoxSaasDB.TabIndex = 14;
             this.comboBoxSaasDB.SelectedIndexChanged += new System.EventHandler(this.comboBoxSaasDB_SelectedIndexChanged);
             // 
             // buttonSaasDbRefresh
             // 
-            this.buttonSaasDbRefresh.Location = new System.Drawing.Point(323, 10);
-            this.buttonSaasDbRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSaasDbRefresh.Location = new System.Drawing.Point(363, 12);
+            this.buttonSaasDbRefresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSaasDbRefresh.Name = "buttonSaasDbRefresh";
-            this.buttonSaasDbRefresh.Size = new System.Drawing.Size(177, 27);
+            this.buttonSaasDbRefresh.Size = new System.Drawing.Size(199, 34);
             this.buttonSaasDbRefresh.TabIndex = 15;
             this.buttonSaasDbRefresh.Text = "DBs Refresh";
             this.buttonSaasDbRefresh.UseVisualStyleBackColor = true;
@@ -521,119 +519,91 @@
             // 
             this.radioButton_RiskAvert_Prod.AutoSize = true;
             this.radioButton_RiskAvert_Prod.BackColor = System.Drawing.Color.Silver;
-            this.radioButton_RiskAvert_Prod.Location = new System.Drawing.Point(27, 28);
-            this.radioButton_RiskAvert_Prod.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton_RiskAvert_Prod.Location = new System.Drawing.Point(30, 35);
+            this.radioButton_RiskAvert_Prod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton_RiskAvert_Prod.Name = "radioButton_RiskAvert_Prod";
-            this.radioButton_RiskAvert_Prod.Size = new System.Drawing.Size(114, 20);
+            this.radioButton_RiskAvert_Prod.Size = new System.Drawing.Size(72, 24);
             this.radioButton_RiskAvert_Prod.TabIndex = 37;
-            this.radioButton_RiskAvert_Prod.Text = "SQLDEV-SRV";
+            this.radioButton_RiskAvert_Prod.Text = "Local";
             this.radioButton_RiskAvert_Prod.UseVisualStyleBackColor = false;
             this.radioButton_RiskAvert_Prod.CheckedChanged += new System.EventHandler(this.radioButton_RiskAvert_Prod_CheckedChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton_VESSEL_SRV);
-            this.groupBox1.Controls.Add(this.radioButton_OFFICE_SRV);
             this.groupBox1.Controls.Add(this.radioButton_RiskAvert_Prod);
-            this.groupBox1.Location = new System.Drawing.Point(555, 32);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(624, 40);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(182, 152);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(164, 95);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SQL Connections";
             // 
-            // radioButton_VESSEL_SRV
-            // 
-            this.radioButton_VESSEL_SRV.AutoSize = true;
-            this.radioButton_VESSEL_SRV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton_VESSEL_SRV.Location = new System.Drawing.Point(27, 112);
-            this.radioButton_VESSEL_SRV.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton_VESSEL_SRV.Name = "radioButton_VESSEL_SRV";
-            this.radioButton_VESSEL_SRV.Size = new System.Drawing.Size(138, 20);
-            this.radioButton_VESSEL_SRV.TabIndex = 39;
-            this.radioButton_VESSEL_SRV.Text = "VESSEL-SQLSRV";
-            this.radioButton_VESSEL_SRV.UseVisualStyleBackColor = false;
-            this.radioButton_VESSEL_SRV.CheckedChanged += new System.EventHandler(this.radioButton_VESSEL_SRV_CheckedChanged);
-            // 
-            // radioButton_OFFICE_SRV
-            // 
-            this.radioButton_OFFICE_SRV.AutoSize = true;
-            this.radioButton_OFFICE_SRV.BackColor = System.Drawing.Color.DodgerBlue;
-            this.radioButton_OFFICE_SRV.Location = new System.Drawing.Point(27, 84);
-            this.radioButton_OFFICE_SRV.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton_OFFICE_SRV.Name = "radioButton_OFFICE_SRV";
-            this.radioButton_OFFICE_SRV.Size = new System.Drawing.Size(133, 20);
-            this.radioButton_OFFICE_SRV.TabIndex = 38;
-            this.radioButton_OFFICE_SRV.Text = "OFFICE-SQLSRV";
-            this.radioButton_OFFICE_SRV.UseVisualStyleBackColor = false;
-            this.radioButton_OFFICE_SRV.CheckedChanged += new System.EventHandler(this.radioButton_OFFICE_SRV_CheckedChanged);
-            // 
             // textBox_PORT
             // 
             this.textBox_PORT.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox_PORT.Location = new System.Drawing.Point(556, 231);
-            this.textBox_PORT.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_PORT.Location = new System.Drawing.Point(626, 289);
+            this.textBox_PORT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_PORT.Name = "textBox_PORT";
-            this.textBox_PORT.Size = new System.Drawing.Size(144, 22);
+            this.textBox_PORT.Size = new System.Drawing.Size(162, 26);
             this.textBox_PORT.TabIndex = 39;
             // 
             // textBox_VERSION
             // 
             this.textBox_VERSION.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox_VERSION.Location = new System.Drawing.Point(556, 282);
-            this.textBox_VERSION.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_VERSION.Location = new System.Drawing.Point(626, 352);
+            this.textBox_VERSION.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_VERSION.Name = "textBox_VERSION";
-            this.textBox_VERSION.Size = new System.Drawing.Size(144, 22);
+            this.textBox_VERSION.Size = new System.Drawing.Size(162, 26);
             this.textBox_VERSION.TabIndex = 40;
             // 
             // textBox_Last_Restart
             // 
             this.textBox_Last_Restart.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox_Last_Restart.Location = new System.Drawing.Point(556, 332);
-            this.textBox_Last_Restart.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Last_Restart.Location = new System.Drawing.Point(626, 415);
+            this.textBox_Last_Restart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_Last_Restart.Name = "textBox_Last_Restart";
-            this.textBox_Last_Restart.Size = new System.Drawing.Size(144, 22);
+            this.textBox_Last_Restart.Size = new System.Drawing.Size(162, 26);
             this.textBox_Last_Restart.TabIndex = 41;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(559, 213);
+            this.label8.Location = new System.Drawing.Point(629, 266);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 16);
+            this.label8.Size = new System.Drawing.Size(38, 20);
             this.label8.TabIndex = 42;
             this.label8.Text = "Port";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(559, 263);
+            this.label9.Location = new System.Drawing.Point(629, 329);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 16);
+            this.label9.Size = new System.Drawing.Size(63, 20);
             this.label9.TabIndex = 43;
             this.label9.Text = "Version";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(559, 314);
+            this.label10.Location = new System.Drawing.Point(629, 392);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 16);
+            this.label10.Size = new System.Drawing.Size(79, 20);
             this.label10.TabIndex = 44;
             this.label10.Text = "Last Start";
             // 
             // FormDBConnection
             // 
             this.AcceptButton = this.buttonConnect;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(745, 501);
+            this.ClientSize = new System.Drawing.Size(798, 626);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -643,7 +613,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControlDbConnections);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormDBConnection";
@@ -714,8 +684,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton radioButton_OFFICE_SRV;
-        private System.Windows.Forms.RadioButton radioButton_VESSEL_SRV;
     }
 }
 

@@ -89,7 +89,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(1206, 692);
-            this.splitContainer1.SplitterDistance = 141;
+            this.splitContainer1.SplitterDistance = 155;
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -111,7 +111,7 @@
             this.splitContainer3.Panel2.BackColor = System.Drawing.Color.SlateGray;
             this.splitContainer3.Panel2.Controls.Add(this.buttonDbDocumentation);
             this.splitContainer3.Panel2.Controls.Add(this.buttonLinks);
-            this.splitContainer3.Size = new System.Drawing.Size(141, 692);
+            this.splitContainer3.Size = new System.Drawing.Size(155, 692);
             this.splitContainer3.SplitterDistance = 227;
             this.splitContainer3.SplitterWidth = 6;
             this.splitContainer3.TabIndex = 0;
@@ -164,7 +164,7 @@
             this.treeViewMain.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode4,
             treeNode12});
-            this.treeViewMain.Size = new System.Drawing.Size(141, 227);
+            this.treeViewMain.Size = new System.Drawing.Size(155, 227);
             this.treeViewMain.TabIndex = 0;
             this.treeViewMain.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewMain_AfterSelect);
             this.treeViewMain.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.treeViewMain_MouseDoubleClick);
@@ -175,7 +175,7 @@
             this.buttonDbDocumentation.Location = new System.Drawing.Point(0, 34);
             this.buttonDbDocumentation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonDbDocumentation.Name = "buttonDbDocumentation";
-            this.buttonDbDocumentation.Size = new System.Drawing.Size(141, 34);
+            this.buttonDbDocumentation.Size = new System.Drawing.Size(155, 34);
             this.buttonDbDocumentation.TabIndex = 10;
             this.buttonDbDocumentation.Text = "API";
             this.buttonDbDocumentation.UseVisualStyleBackColor = true;
@@ -187,7 +187,7 @@
             this.buttonLinks.Location = new System.Drawing.Point(0, 0);
             this.buttonLinks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonLinks.Name = "buttonLinks";
-            this.buttonLinks.Size = new System.Drawing.Size(141, 34);
+            this.buttonLinks.Size = new System.Drawing.Size(155, 34);
             this.buttonLinks.TabIndex = 1;
             this.buttonLinks.Text = "Usefull Links";
             this.buttonLinks.UseVisualStyleBackColor = true;
@@ -211,7 +211,7 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.LightSlateGray;
             this.splitContainer2.Panel2.Controls.Add(this.richTextBoxSQL);
-            this.splitContainer2.Size = new System.Drawing.Size(1059, 692);
+            this.splitContainer2.Size = new System.Drawing.Size(1045, 692);
             this.splitContainer2.SplitterDistance = 429;
             this.splitContainer2.SplitterWidth = 6;
             this.splitContainer2.TabIndex = 0;
@@ -239,7 +239,7 @@
             this.richTextBoxSQL.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxSQL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBoxSQL.Name = "richTextBoxSQL";
-            this.richTextBoxSQL.Size = new System.Drawing.Size(1059, 257);
+            this.richTextBoxSQL.Size = new System.Drawing.Size(1045, 257);
             this.richTextBoxSQL.TabIndex = 0;
             this.richTextBoxSQL.Text = "";
             // 
