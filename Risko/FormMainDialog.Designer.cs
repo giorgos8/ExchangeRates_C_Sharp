@@ -54,7 +54,6 @@
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.treeViewMain = new System.Windows.Forms.TreeView();
             this.buttonDbDocumentation = new System.Windows.Forms.Button();
-            this.buttonLinks = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listViewMain = new System.Windows.Forms.ListView();
             this.richTextBoxSQL = new System.Windows.Forms.RichTextBox();
@@ -110,7 +109,6 @@
             // 
             this.splitContainer3.Panel2.BackColor = System.Drawing.Color.SlateGray;
             this.splitContainer3.Panel2.Controls.Add(this.buttonDbDocumentation);
-            this.splitContainer3.Panel2.Controls.Add(this.buttonLinks);
             this.splitContainer3.Size = new System.Drawing.Size(155, 692);
             this.splitContainer3.SplitterDistance = 227;
             this.splitContainer3.SplitterWidth = 6;
@@ -172,7 +170,7 @@
             // buttonDbDocumentation
             // 
             this.buttonDbDocumentation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDbDocumentation.Location = new System.Drawing.Point(0, 34);
+            this.buttonDbDocumentation.Location = new System.Drawing.Point(0, 0);
             this.buttonDbDocumentation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonDbDocumentation.Name = "buttonDbDocumentation";
             this.buttonDbDocumentation.Size = new System.Drawing.Size(155, 34);
@@ -180,18 +178,6 @@
             this.buttonDbDocumentation.Text = "API";
             this.buttonDbDocumentation.UseVisualStyleBackColor = true;
             this.buttonDbDocumentation.Click += new System.EventHandler(this.buttonDbDocumentation_Click);
-            // 
-            // buttonLinks
-            // 
-            this.buttonLinks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonLinks.Location = new System.Drawing.Point(0, 0);
-            this.buttonLinks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonLinks.Name = "buttonLinks";
-            this.buttonLinks.Size = new System.Drawing.Size(155, 34);
-            this.buttonLinks.TabIndex = 1;
-            this.buttonLinks.Text = "Usefull Links";
-            this.buttonLinks.UseVisualStyleBackColor = true;
-            this.buttonLinks.Click += new System.EventHandler(this.buttonLinks_Click);
             // 
             // splitContainer2
             // 
@@ -279,7 +265,6 @@
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.TreeView treeViewMain;
         private System.Windows.Forms.RichTextBox richTextBoxSQL;
-        private System.Windows.Forms.Button buttonLinks;
         private System.Windows.Forms.Button buttonDbDocumentation;
     }
 }

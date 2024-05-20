@@ -921,15 +921,7 @@ namespace Risko
             string strKeyID = listViewMain.SelectedItems[0].SubItems[0].Text;
             string strSecondColumn = listViewMain.SelectedItems[0].SubItems[1].Text;
             string strSelectedNodeTag = treeViewMain.SelectedNode.Tag.ToString();
-        }
-
-        
-
-        private void buttonLinks_Click(object sender, EventArgs e)
-        {
-            FormLinks dlgLinks = new FormLinks();
-            dlgLinks.ShowDialog();
-        }
+        }        
 
         private void listViewMain_ColumnClick(object sender, ColumnClickEventArgs e)
         {
@@ -939,8 +931,7 @@ namespace Risko
             {
                 case "002001":
                 {
-                    MessageBox.Show(e.Column.ToString());                    
-
+                    MessageBox.Show(e.Column.ToString());
                     break;
                 }
             }
