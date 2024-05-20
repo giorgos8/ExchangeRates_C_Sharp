@@ -120,6 +120,30 @@ namespace Risko
                         break;
                     }
 
+                case "000007003":
+                    {
+                        sql = String.Format
+                        (
+                            @"
+                                SELECT
+	                                LEFT(CAST(MONTH AS VARCHAR(10)), 4) + '-' + RIGHT(CAST(MONTH AS VARCHAR(10)), 2) AS [MONTH],
+	                                CAST(MIN_EXCHANGE_RATE AS VARCHAR(20)) AS MIN_EXCHANGE_RATE, 
+	                                CAST(MAX_EXCHANGE_RATE AS VARCHAR(20)) AS MAX_EXCHANGE_RATE,
+	                                CAST(AVG_EXCHANGE_RATE AS VARCHAR(20)) AS AVG_EXCHANGE_RATE
+                                FROM
+	                                [dbo].[VW_EXCHANGE_RATES_USD_STATISTICS]
+                                ORDER BY
+	                                [MONTH] DESC
+                            "
+                        );
+
+                        Clipboard.SetText(sql);
+                        this.richTextBoxSQL.Text = sql;
+
+                        FillList(strSelectedNodeTag, sql);
+                        break;
+                    }
+
                 case "002001":
                     {
                         sql =
@@ -558,6 +582,39 @@ namespace Risko
 
                             if (str_exchange_rate == "-")
                                 item.ForeColor = Color.Red;
+
+                            iRowCount++;
+                        }
+
+                        dr.Close();
+                        command.Dispose();
+
+                        break;
+                    }
+
+                case "000007003":
+                    {
+                        listViewMain.ForeColor = System.Drawing.Color.Black;
+                        listViewMain.Columns.Add("MONTH", 80, HorizontalAlignment.Left);
+                        listViewMain.Columns.Add("MIN_RATE", 80, HorizontalAlignment.Center);
+                        listViewMain.Columns.Add("MAX_RATE", 80, HorizontalAlignment.Center);
+                        listViewMain.Columns.Add("AVG_RATE", 80, HorizontalAlignment.Center);
+
+                        command = new SqlCommand(sql, cnn);
+                        dr = command.ExecuteReader();
+
+                        while (dr.Read())
+                        {
+                            string str_month = dr.GetString(0);
+                            string str_min_rate = dr.GetString(1);
+                            string str_max_rate = dr.GetString(2);
+                            string str_avg_rate = dr.GetString(3);
+
+                            ListViewItem item = this.listViewMain.Items.Add(str_month, str_month);
+                            item.ForeColor = Color.Blue;
+                            item.SubItems.Add(str_min_rate);
+                            item.SubItems.Add(str_max_rate);
+                            item.SubItems.Add(str_avg_rate);
 
                             iRowCount++;
                         }

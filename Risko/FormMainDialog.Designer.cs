@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Logs");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Run Dates");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("ExchangeRates", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Run Dates");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Statistics");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Logs");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("ExchangeRates", new System.Windows.Forms.TreeNode[] {
             treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Reports", new System.Windows.Forms.TreeNode[] {
+            treeNode2,
             treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Columns");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Indexes");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Foreign Keys");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Default & Check Constraints");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Tables");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Routines");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Locks");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("DB Design", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Reports", new System.Windows.Forms.TreeNode[] {
+            treeNode4});
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Columns");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Indexes");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Foreign Keys");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Default & Check Constraints");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Tables");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Routines");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Locks");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("DB Design", new System.Windows.Forms.TreeNode[] {
             treeNode6,
             treeNode7,
             treeNode8,
             treeNode9,
             treeNode10,
-            treeNode11});
+            treeNode11,
+            treeNode12});
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.treeViewMain = new System.Windows.Forms.TreeView();
@@ -122,46 +124,49 @@
             this.treeViewMain.Location = new System.Drawing.Point(0, 0);
             this.treeViewMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.treeViewMain.Name = "treeViewMain";
-            treeNode1.Name = "Logs";
-            treeNode1.Tag = "000007001";
-            treeNode1.Text = "Logs";
-            treeNode2.Name = "Run Dates";
-            treeNode2.Tag = "000007002";
-            treeNode2.Text = "Run Dates";
-            treeNode3.Name = "ExchangeRates";
-            treeNode3.Tag = "000007";
-            treeNode3.Text = "ExchangeRates";
-            treeNode4.Name = "NodeRiskAvert";
-            treeNode4.Tag = "000";
-            treeNode4.Text = "Reports";
-            treeNode5.Name = "Columns";
-            treeNode5.Tag = "002001";
-            treeNode5.Text = "Columns";
-            treeNode6.Name = "Indexes";
-            treeNode6.Tag = "002002";
-            treeNode6.Text = "Indexes";
-            treeNode7.Name = "Foreign Keys";
-            treeNode7.Tag = "002003";
-            treeNode7.Text = "Foreign Keys";
-            treeNode8.Name = "Default & Check Constraints";
-            treeNode8.Tag = "002004";
-            treeNode8.Text = "Default & Check Constraints";
-            treeNode9.Name = "Tables";
-            treeNode9.Tag = "002005";
-            treeNode9.Text = "Tables";
-            treeNode10.Name = "Routines";
-            treeNode10.Tag = "002006";
-            treeNode10.Text = "Routines";
-            treeNode11.ForeColor = System.Drawing.Color.Red;
-            treeNode11.Name = "Locks";
-            treeNode11.Tag = "002007";
-            treeNode11.Text = "Locks";
-            treeNode12.Name = "NodeDBDesign";
-            treeNode12.Tag = "002";
-            treeNode12.Text = "DB Design";
+            treeNode1.Name = "Run Dates";
+            treeNode1.Tag = "000007002";
+            treeNode1.Text = "Run Dates";
+            treeNode2.Name = "Statistics";
+            treeNode2.Tag = "000007003";
+            treeNode2.Text = "Statistics";
+            treeNode3.Name = "Logs";
+            treeNode3.Tag = "000007001";
+            treeNode3.Text = "Logs";
+            treeNode4.Name = "ExchangeRates";
+            treeNode4.Tag = "000007";
+            treeNode4.Text = "ExchangeRates";
+            treeNode5.Name = "NodeRiskAvert";
+            treeNode5.Tag = "000";
+            treeNode5.Text = "Reports";
+            treeNode6.Name = "Columns";
+            treeNode6.Tag = "002001";
+            treeNode6.Text = "Columns";
+            treeNode7.Name = "Indexes";
+            treeNode7.Tag = "002002";
+            treeNode7.Text = "Indexes";
+            treeNode8.Name = "Foreign Keys";
+            treeNode8.Tag = "002003";
+            treeNode8.Text = "Foreign Keys";
+            treeNode9.Name = "Default & Check Constraints";
+            treeNode9.Tag = "002004";
+            treeNode9.Text = "Default & Check Constraints";
+            treeNode10.Name = "Tables";
+            treeNode10.Tag = "002005";
+            treeNode10.Text = "Tables";
+            treeNode11.Name = "Routines";
+            treeNode11.Tag = "002006";
+            treeNode11.Text = "Routines";
+            treeNode12.ForeColor = System.Drawing.Color.Red;
+            treeNode12.Name = "Locks";
+            treeNode12.Tag = "002007";
+            treeNode12.Text = "Locks";
+            treeNode13.Name = "NodeDBDesign";
+            treeNode13.Tag = "002";
+            treeNode13.Text = "DB Design";
             this.treeViewMain.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode12});
+            treeNode5,
+            treeNode13});
             this.treeViewMain.Size = new System.Drawing.Size(155, 227);
             this.treeViewMain.TabIndex = 0;
             this.treeViewMain.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewMain_AfterSelect);
